@@ -112,6 +112,7 @@ def bytes_to_file(file_bytes, file_path):
 
 
 def modify_docx(bytes):
+    print("Recieved docx")
     original_file_name = 'original'
     bytes_to_file(bytes, original_file_name + ".docx")
     modified_bytes = change_footer(original_file_name)
